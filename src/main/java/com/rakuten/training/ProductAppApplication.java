@@ -23,7 +23,7 @@ public class ProductAppApplication {
 		
 //		TestCode.testCustomerDAO(springContainer);
 		
-		TestCode.testProductRepository(springContainer);
+//		TestCode.testProductRepository(springContainer);
 	}
 
 	
