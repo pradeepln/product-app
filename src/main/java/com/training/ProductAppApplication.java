@@ -17,7 +17,7 @@ public class ProductAppApplication {
 //		ProductConsoleUI ui = springContainer.getBean(ProductConsoleUI.class);
 //		ui.createProductWithUI();
 		
-		testReview(springContainer);
+		//testReview(springContainer);
 	}
 
 	private static void testReview(ApplicationContext springContainer) {

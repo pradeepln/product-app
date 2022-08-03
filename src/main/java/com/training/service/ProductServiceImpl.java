@@ -13,6 +13,8 @@ import com.training.domain.Product;
 @Service
 public class ProductServiceImpl implements ProductService {
 	
+	static final int MIN_VALUE = 10_000;
+	
 	ProductDAO dao; // = new ProductDAOInMemImpl();
 	
 	@Autowired
@@ -22,7 +24,7 @@ public class ProductServiceImpl implements ProductService {
 	
 	@Override
 	public int addProduct(Product toBeAdded) {
-		if(toBeAdded.getPrice() * toBeAdded.getQoh() >= 10000) {
+		if(toBeAdded.getPrice() * toBeAdded.getQoh() >= MIN_VALUE) {
 			Product added = dao.save(toBeAdded);
 			return added.getId();
 		}else {
